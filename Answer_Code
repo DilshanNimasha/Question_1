@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+
+{
+    int t;
+
+    printf("Enter number of tests : ");
+    scanf("%d",&t);
+
+    while (t--)
+
+    {
+        int sum=0, a, b, k;
+        
+        printf("Enter an input for a: ");
+        scanf("%d", &a);
+
+        printf("Enter an input for b: ");
+        scanf("%d", &b);
+
+        printf("Enter an input for k: ");
+        scanf("%d", &k);
+
+        char str1[1000]="";;
+        char str2[10]="";
+       
+        sum = a;
+
+        for (int i = 0; i <= k + 1; i++)
+
+        {
+         	sprintf(str2, "%d", sum); //easiest way to convert an integer to a string.
+            strcat(str1, str2); //used for string concatenation. 
+            sum = sum + b;
+            
+            if (i == k - 1)
+
+            {
+                printf("Kth digit : %c \n",str1[i]);
+            }
+
+        }
+
+    }
+
+    return 0;
+
+}
