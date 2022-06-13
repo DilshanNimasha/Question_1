@@ -15,7 +15,12 @@ Print the kth digit for each test.
 
 
 
-Sample Input         Sample Output
-2                    2
-3 5 9                7
+Sample Input         
+2                    
+3 5 9                
 2 7 10
+
+
+ Sample Output
+2
+7
