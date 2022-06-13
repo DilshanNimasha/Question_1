@@ -22,5 +22,7 @@ Sample Input
 
 
  Sample Output
+ 
 2
+
 7
